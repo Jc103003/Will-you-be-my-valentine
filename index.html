@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will you be my valentine?</title>
+    <link rel="icon" type="image/png" href="Images/Heart_PNG_Clipart-1003.png">
+    <link rel="stylesheet" href="CSS/indexStyles.css">
+    <script src="Scripts/scripts.js" defer></script>
+</head>
+<body>
+  <div id="pageExplosion"></div>
+  <main class="heart-wrap">
+    <svg
+      id="loveHeart"
+      class="heart-svg"
+      width="140"
+      height="140"
+      viewBox="0 0 100 100"
+      xmlns="http://www.w3.org/2000/svg"
+      role="button"
+      aria-label="Click the heart 5 times"
+      tabindex="0"
+    >
+      <defs>
+        <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#ff4fa3"/>
+          <stop offset="100%" stop-color="#ff1e8a"/>
+        </linearGradient>
+      </defs>
+
+      <!-- Heart -->
+      <path
+        id="heartShape"
+        d="M50 85
+           C20 60, 5 45, 5 28
+           C5 15, 15 5, 28 5
+           C38 5, 46 12, 50 18
+           C54 12, 62 5, 72 5
+           C85 5, 95 15, 95 28
+           C95 45, 80 60, 50 85 Z"
+        fill="url(#grad)"
+      />
+
+    </svg>
+
+    <div id="heartText" class="heart-text">Will you be my valentine?</div>
+  </main>
+</body>
+</html>
