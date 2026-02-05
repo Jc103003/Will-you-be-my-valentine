@@ -14,26 +14,6 @@ The site guides the viewer through a sequence of messages, images, and animation
 
 ---
 
-## Project Structure
-/
-├── index.html
-├── html/
-│   └── valentine.html
-├── CSS/
-│   ├── styles.css
-│   └── valentineStyles.css
-├── Scripts/
-│   ├── scripts.js
-│   └── valentineScripts.js
-├── Images/
-│   └── me-and-ally/
-│       ├── photo-01.jpeg
-│       ├── photo-02.jpeg
-│       └── …
-└── README.md
-
----
-
 ## Technologies Used
 
 - HTML5
