@@ -16,7 +16,81 @@ body {
     font-size: clamp(2rem, 5vw, 5rem)
 }
 
+.carousel-container {
+    display: none;
+    width: 100vw;
+    max-width: 100vw; /* Adjust as needed */
+    height: 80vh;    /* Adjust as needed */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Enforce snapping on the x-axis */
+    scroll-behavior: smooth; /* Add smooth transition when scrolling */
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+    opacity: 0;
+    animation: fadeIn 1.2s ease forwards;
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-track {
+  display: flex; 
+  height: 100%;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item p {
+color: #6b2b3a;
+font-size: clamp(1rem, 5vw, 2rem)
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 90%;
+  object-fit: contain;  
+  display: block;
+}
+
+#heart-explosion {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.heart-particle {
+  position: absolute;
+  font-size: clamp(1.2rem, 3vw, 2.2rem);
+  animation: heartBurst 1.6s ease-out forwards;
+}
+
+
 /* ANIMATIONS */
+
+@keyframes heartBurst {
+  0% {
+    transform: translate(0, 0) scale(0.6);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--x), var(--y)) scale(1.2);
+    opacity: 0;
+  }
+}
 
 @keyframes fadeIn {
     to {

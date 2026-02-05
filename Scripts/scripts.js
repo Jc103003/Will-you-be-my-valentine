@@ -1,7 +1,6 @@
 const heart = document.getElementById("loveHeart");
 const text = document.getElementById("heartText");
 const explosion = document.getElementById("pageExplosion");
-const wordFade = document.querySelector("wordFade")
 
 const MAX_CLICKS = 5;
 const NEXT_PAGE = "html/valentine.html";
