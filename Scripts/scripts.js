@@ -14,7 +14,7 @@ function restartAnim(cls) {
   heart.classList.add(cls);
 }
 
-function handleClick() {
+function handleHeartClick() {
   if (locked) return;
 
   clicks++;
@@ -61,11 +61,11 @@ setTimeout(() => {
 }, 650);
 }
 
-heart.addEventListener("click", handleClick);
+heart.addEventListener("click", handleHeartClick);
 
 heart.addEventListener("keydown", (e) => {
   if (e.key === "Enter" || e.key === " ") {
     e.preventDefault();
-    handleClick();
+    handleHeartClick();
   }
 });
